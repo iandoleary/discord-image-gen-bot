@@ -1,5 +1,5 @@
 # discord-image-gen-bot
-This bot can generate images with both Stable Diffusion and with the OpenAI API. The stable diffusion model is locally hosted so images take longer to generate, but on a 3060Ti can generate a 1024x1024 image in about a minute. The bot can also play songs from YouTube search.
+This bot can generate images with both Stable Diffusion and with the OpenAI API. The stable diffusion model is locally hosted so images take longer to generate, but on a 3060Ti can generate a 1024x1024 image in about a minute. This bot can also play songs from YouTube search.
 ## Prerequisites
 - Install Nvidia CUDA
 - Create a Discord bot through https://discord.com/developers

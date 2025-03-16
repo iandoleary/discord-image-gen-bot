@@ -99,7 +99,7 @@ async def on_ready():
 
 
 @bot.command()
-async def imggen_gpt(ctx, *, arg):
+async def img_openai(ctx, *, arg):
     await ctx.send("Generating image with OpenAI dall-e-3 for prompt: " + arg)
     
     response = openai.images.generate(
@@ -117,7 +117,7 @@ async def imggen_gpt(ctx, *, arg):
 
 
 @bot.command()
-async def imggen_sd(ctx, *, arg):
+async def img_sd(ctx, *, arg):
     await ctx.send("Generating image with Stable Diffusion for prompt: " + arg)
     # Generate a random seed for the generator
     seed = random.randint(0, 2**32 - 1)
@@ -208,17 +208,17 @@ async def stop(ctx):
         await ctx.send("I'm not playing any music.")
 
 
-# @bot.event
-# async def on_message(message):
-#     if message.author == bot.user:
-#         return
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    #Test message
+    msg = message.content
+    if msg.startswith("hello"):
+        await message.channel.send("hello")
+        print("Message sent in channel: " + str(message.channel.name))
 
-#     msg = message.content
-#     if msg.startswith("hello"):
-#         await message.channel.send("whats up")
-#         print("Message sent in channel: " + str(message.channel.name))
-
-#     await bot.process_commands(message)
+    await bot.process_commands(message)
 
 
 bot.run(DISCORD_TOKEN)

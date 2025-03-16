@@ -4,17 +4,20 @@ Discord bot
 - Install Nvidia CUDA
 - Create a Discord bot through https://discord.com/developers
 - Set env vars for Discord API in your .env:
+```bash
 DISCORD_APP_ID=''
 DISCORD_PUBLIC_KEY=''
 DISCORD_BOT_TOKEN=''
-
+```
 - Retrieve a huggingface token through https://huggingface.co/
 - For FLUX.1, you will need to request access to the model's repository - takes about 30 seconds if you have an account.
+```bash
 HF_TOKEN=''
-
+```
 - If you want to generate images through the OpenAI API, you will need an API key:
+```bash
 OPENAI_API_KEY=''
-
+```
 ## Recommended setup
 ### Create a virtual Environment:
 ```bash

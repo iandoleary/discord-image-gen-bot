@@ -5,7 +5,7 @@ This bot can generate images with both Stable Diffusion and with the OpenAI API.
 - Example 2: (low num_inference_steps)<br />
 <img src="examples/image_sd_2.png" alt="Example Image 2" width="400"><br />
 ## Prerequisites
-- Install Nvidia CUDA
+- Install Nvidia CUDA https://docs.nvidia.com/cuda/
 - Create a Discord bot through https://discord.com/developers
 - Set env vars for Discord API in your .env:
 ```bash

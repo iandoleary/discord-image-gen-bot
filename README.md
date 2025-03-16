@@ -23,7 +23,7 @@ OPENAI_API_KEY=''
 ```bash
 python -m venv venv
 ```
-### Install required pip modules:
+### Install required python modules:
 ```bash
 pip install -r requirements.txt
 ```

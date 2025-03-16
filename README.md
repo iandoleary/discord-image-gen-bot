@@ -64,8 +64,11 @@ git add .
 git commit -m "message"
 git push
 ```
-## Developer Notes:
+## TODO
+- Deploy to AWS
+- Migrate to Flux.1-dev model
 
+## Developer Notes:
 GUIDANCE SCALE: In Stable Diffusion, "guidance scale" refers to a parameter that controls how closely the generated image adheres to the text prompt provided, essentially dictating how strictly the AI model should follow the instructions given; a higher guidance scale means the image will more closely resemble the prompt, while a lower scale allows for more creative interpretation and variation in the output. - Google Search AI
 
 INFERENCE STEPS: num_inference_steps ( int , optional, defaults to 50) — The number of denoising steps. More denoising steps usually lead to a higher quality image at the expense of slower inference. guidance_scale ( float , optional, defaults to 7.5) — Guidance scale as defined in Classifier-Free Diffusion Guidance. -HuggingFace

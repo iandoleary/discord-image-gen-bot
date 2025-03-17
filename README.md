@@ -27,15 +27,15 @@ OPENAI_API_KEY=''
 ```bash
 python -m venv venv
 ```
+### Activate venv:
+```bash
+venv\Scripts\activate
+```
 ### Install required python modules:
 ```bash
 pip install -r requirements.txt
 ```
 ## Start Bot
-### Activate venv:
-```bash
-venv\Scripts\activate
-```
 ### Run the bot:
 ```bash
 python app.py
